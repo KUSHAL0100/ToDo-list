@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Soft gradient */
+    color: #333; /* Neutral text color */
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Vibrant gradient */
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.header h2 {
+    margin: 0;
+    font-weight: 600;
+}
+.parent{
+    width:95%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.website {
+    width: 530px;
+    /* margin: 60px auto; */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Card shadow */
+}
+
+.add-flex {
+    display: flex;
+    justify-content: center; /* Ensure "+" icon is properly aligned */
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.add-flex h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #4facfe; /* Accent color */
+    margin-top: -5px;
+}
+
+.userName {
+    color: #7a828a; /* Neutral tone */
+}
+
+.add-user {
+    margin: 0;
+    padding:10px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4facfe; /* Accent color */
+    font-size: 20px; /* Ensure "+" icon is visible */
+}
+
+.add-user:hover {
+    background-color: rgba(79, 172, 254, 0.1); /* Subtle hover effect */
+    border-radius: 50%;
+}
+
+.desc {
+    margin-top:0;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.display-this {
+    margin: 0 0 15px 0;
+    background-color: #f7f9fc; /* Soft light background */
+    width: 100%;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.flex-input {
+    display: flex;
+    justify-content: space-between; /* Align input and calendar button */
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.taskInput {
+    flex: 1; /* Adjust to prevent overflow */
+    background-color: #fdfd96; /* Light yellow */
+    border-radius: 5px;
+    padding: 12px 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    color: #333;
+    font-size: 17px;
+}
+
+.taskInput:focus {
+    border: 1px solid #4facfe; /* Focus border color */
+}
+
+.d-none {
+    display: none;
+}
+
+ /* Hide the input but make it still interactable */
+ .hidden-input {
+    opacity: 0; /* Make it invisible but still interactable */
+    position: absolute; /* So it doesn’t take up space */
+    pointer-events: none; /* Disable clicking directly on the input */
+}
+
+.date-input{
+    width: 4%;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4facfe; /* Vibrant blue */
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: none;
+}
+
+.date-input:hover {
+    transform: scale(1.1);
+    background-color: #3a8ed5; /* Darker blue on hover */
+}
+
+.add-task {
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient button */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-task:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(79, 172, 254, 0.3); /* Button shadow */
+}
+
+.cards{
+    width: 35%;
+    margin: 5px 55px 5px 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 80%;
+    margin: 7px auto 7px auto;
+    border-radius: 5px;
+    padding: 2px 9px;
+    box-sizing: border-box;
+    background-color: #4facfe;
+    cursor: pointer;
+    background: linear-gradient(to left, #4facfe, #00f2fe); /* Gradient button */
+}
+.card-flex{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 5px;
+}
+.completeTask{
+    transform: scale(1.1)    
+}
+.taskDisplay{
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.dateDisplay{
+    margin: 0;
+    color: #7a828a;
+    padding: 0 0 10px 25px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.completeTask:checked + .taskDisplay{
+    text-decoration: line-through;
+    color: gray;
+}
+.gap1{
+    display: flex;
+    gap: 15px;
+    
+}
