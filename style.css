@@ -209,3 +209,19 @@ body {
     gap: 15px;
     
 }
+
+
+.fade-out-up{
+    animation: fadeOutUp 0.5s ease-out   forwards ;
+}
+
+@keyframes fadeOutUp {
+    0%{
+        opacity: 1;
+        transform: translateY(0); /*jaise the vaise raho*/
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
